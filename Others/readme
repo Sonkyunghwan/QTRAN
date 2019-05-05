@@ -1,0 +1,18 @@
+Training
+
+$algorithm = vdn, qmix, pqmix5(=QTRAN-alt in the paper), pqmix7(=QTRAN in the paper)
+
+python main.py --agent pos_cac_fo --training_step 10000 --b_size 10000 --m_size 32 --seed 0 --algorithm $algorithm --penalty 0
+
+
+In make_env.py
+
+(i) Matrix game
+
+from envs.environment import MultiAgentSimpleEnv2 as MAS
+
+(i) Gaussian Squeeze
+
+from envs.environment import MultiAgentSimpleEnv4 as MAS
+
+
