@@ -429,7 +429,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -469,7 +469,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -552,7 +552,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -631,7 +631,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -758,7 +758,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -849,7 +849,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -983,7 +983,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -1130,7 +1130,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)
@@ -1170,7 +1170,7 @@ class DQNetwork(object):
             id = tf.reshape(obs[:,0,0], shape = [-1, 1])*0 + float(i)/self.n_predator
             obs = obs - loc
             obs = tf.reshape(obs, shape=[-1, self.state_dim])
-            # obs = tf.where(tf.abs(obs) < 0.3,
+            # obs = tf.where(tf.abs(obs) < 2.5 / FLAGS.map_size,
             #                         obs,
             #                         obs*0, name='clipped_error')
             obs_n = tf.concat([obs, id, tf.reshape(loc, shape = [-1, 2])],1)

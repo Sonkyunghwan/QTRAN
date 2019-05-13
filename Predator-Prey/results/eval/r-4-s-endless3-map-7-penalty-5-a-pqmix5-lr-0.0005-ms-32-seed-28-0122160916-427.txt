@@ -1,1 +1,0 @@
-[evaluation.py:28] 2019-01-22 16:10:23,355	training result: 	-14.51	100

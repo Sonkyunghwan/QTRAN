@@ -1,7 +1,0 @@
-[evaluation.py:28] 2019-01-22 15:58:00,168	training result: 	-17.78	100
-[evaluation.py:28] 2019-01-22 15:59:54,566	training result: 	-9.115	200
-[evaluation.py:28] 2019-01-22 16:01:47,518	training result: 	-7.725	300
-[evaluation.py:28] 2019-01-22 16:03:40,797	training result: 	-5.81	400
-[evaluation.py:28] 2019-01-22 16:05:35,038	training result: 	-7.145	500
-[evaluation.py:28] 2019-01-22 16:07:28,954	training result: 	-7.815	600
-[evaluation.py:28] 2019-01-22 16:09:25,295	training result: 	-5.93	700
