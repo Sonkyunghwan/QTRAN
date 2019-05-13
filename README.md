@@ -1,4 +1,4 @@
-# QTRAN
+# QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning
 
 There will be additional updates later
 
